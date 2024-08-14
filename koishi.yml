@@ -1,0 +1,81 @@
+plugins:
+  group:server:
+    $collapsed: true
+    server:26e7u4:
+      port: 5140
+      maxPort: 5149
+    ~server-satori:iver2u: {}
+    ~server-temp:q3uf1a: {}
+  group:basic:
+    $collapsed: true
+    ~admin:qyc7vf: {}
+    ~bind:1vo4q2: {}
+    commands:pud7jq: {}
+    help:t2i4zt: {}
+    http:lk3vfm: {}
+    ~inspect:h7bjpp: {}
+    locales:ff02kn: {}
+    proxy-agent:x3edp6: {}
+    rate-limit:sltxle: {}
+    telemetry:n6til0: {}
+  group:console:
+    $collapsed: true
+    actions:de2ba9: {}
+    analytics:4zfu9f: {}
+    android:wqw5jc:
+      $if: env.KOISHI_AGENT?.includes('Android')
+    ~auth:aln9ri: {}
+    config:f1wzah: {}
+    console:abc72t:
+      open: true
+    dataview:6tiba4: {}
+    desktop:mi40by:
+      $if: env.KOISHI_AGENT?.includes('Desktop')
+    explorer:z37x60: {}
+    logger:8cay8n: {}
+    insight:4g8wm0: {}
+    market:x17wh6:
+      search:
+        endpoint: https://registry.koishi.t4wefan.pub/index.json
+    notifier:mq0ddi: {}
+    oobe:8lbzni: {}
+    sandbox:6cixzc: {}
+    status:9t1g45: {}
+    theme-vanilla:5xrfpp: {}
+  group:storage:
+    $collapsed: true
+    ~database-mongo:b3aha4:
+      database: koishi
+    ~database-mysql:k4wdsg:
+      database: koishi
+    ~database-postgres:glc7os:
+      database: koishi
+    database-sqlite:2n56ut:
+      path: data/koishi.db
+    assets-local:yuqolq: {}
+  group:adapter:
+    $collapsed: true
+    ~adapter-dingtalk:gq7kds: {}
+    ~adapter-discord:rmec6z: {}
+    ~adapter-kook:ax386t: {}
+    ~adapter-lark:rlixxc: {}
+    ~adapter-line:2bvtqh: {}
+    ~adapter-mail:65tr1r: {}
+    ~adapter-matrix:o4l55g: {}
+    ~adapter-qq:gf3clw: {}
+    ~adapter-satori:82mp7a: {}
+    ~adapter-slack:0ha0pu: {}
+    ~adapter-telegram:w6roza: {}
+    ~adapter-wechat-official:szejlt: {}
+    ~adapter-wecom:j3re1z: {}
+    ~adapter-whatsapp:yvarus: {}
+    ~adapter-zulip:sn4qkw: {}
+  group:develop:
+    $collapsed: true
+    $if: env.NODE_ENV === 'development'
+    hmr:s6okdp:
+      root: .
+  group:pqxsa4:
+    $collapsed: true
+    $label: maple
+  maple-emojimix:3sc0cc: {}
